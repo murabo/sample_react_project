@@ -1,0 +1,58 @@
+.list{
+  width: 100%;
+  border-bottom: 0.1rem solid #E2E9E5
+}
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 0;
+  .status {
+    width: 9rem;
+    flex: 0 0 auto;
+  }
+  .title {
+    flex: 1;
+    width: 20rem;
+    font-size: 1.4rem;
+    padding-right: 2rem;
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .update {
+    width: 9rem;
+    color: #6d7470;
+    font-size: 1.2rem;
+  }
+  .menu {
+    width: 3rem;
+    .iconMenu {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+
+
+.deadline {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  .today {
+    color: #2EB964;
+    padding-left: 1.8rem;
+    background-position: center;
+    background: url('../../../../assets/icon_calendar_green.svg') no-repeat;
+  }
+  .any {
+    color: #6d7470;
+    padding-left: 1.8rem;
+    background-position: center;
+    background: url('../../../../assets/icon_calendar_gray.svg') no-repeat;
+  }
+}
+

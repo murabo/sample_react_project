@@ -1,0 +1,31 @@
+.chip {
+  display: inline-block;
+  padding: 0.1rem 1.2rem;
+  .inner {
+    display: flex;
+    align-items: center;
+  }
+  .info {
+    margin-left: 1rem;
+    white-space: nowrap;
+    .name {
+      margin-left: 1rem;
+      color: #6D7470;
+      font-size: 1.4rem;
+      width: 15rem;
+    }
+    .email {
+      color: #6d7470;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.iconPlus {
+  margin-right: 1rem;
+}
+.title {
+  color: #6d7470;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}

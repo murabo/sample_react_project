@@ -1,0 +1,239 @@
+.button {
+  color: red;
+}
+
+$color_primary: #2EB964;
+$color_dark: #29A65A;
+
+
+:global {
+
+  .gjs-pn-panel {
+    position: fixed;
+  }
+
+  // classの表示
+  .gjs-clm-tags {
+    display: none;
+  }
+
+  // style manager
+  .gjs-sm-properties {
+    padding: 10px 20px;
+  }
+  .gjs-sm-sector  {
+    .gjs-sm-property {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  // プロパティ上下矢印
+  .gjs-field {
+    position: relative;
+  }
+  .gjs-field-arrows {
+    cursor: pointer;
+    position: static;
+    margin: auto;
+    height: auto;
+    width: auto;
+    z-index: 10;
+  }
+  .gjs-field-arrow-u {
+    left: -15px;
+    top: 50%;
+    margin-top: -6px;
+    border-bottom: 10px solid rgba(255,255,255,0.7);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .gjs-field-arrow-d {
+    right: -15px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid rgba(255,255,255,0.7);
+  }
+
+
+  //パネル幅
+  .gjs-cv-canvas {
+    width: 75%;
+  }
+  .gjs-pn-views-container {
+    width: 25%;
+  }
+  .gjs-pn-options {
+    right: 25%;
+  }
+
+  // パーツ
+  .customBlock {
+    width: 100%;
+    max-height: 200px;
+    padding: 0;
+    cursor: auto;
+    iframe {
+      position: relative;
+      z-index: 1;
+      width: 1200px;
+      height: 350px;
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scale(0.4, 0.4);
+      -moz-transform: scale(0.4, 0.4);
+      transform: scale(0.4, 0.4);
+      overflow: hidden;
+    }
+  }
+
+  // toolbar
+  .gjs-toolbar {
+    background-color: $color_primary;
+    border-radius: 5px;
+  }
+  .toolbarButton {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    background-color: $color_primary;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:after {
+      position: absolute;
+      right: -5px;
+      top: 0;
+      content: "";
+      height: 32px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    &:last-of-type{
+      &:after {
+        border-right: none;
+      }
+    }
+
+    &:hover {
+      background-color: $color_dark;
+      .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  .toolbarParts {
+    background-image: url('../assets/toolbar_parts.svg');
+  }
+  .toolbarClone {
+    background-image: url('../assets/toolbar_clone.svg');
+  }
+  .toolbarDelete {
+    background-image: url('../assets/toolbar_trash.svg');
+  }
+  .toolbarImage {
+    background-image: url('../assets/toolbar_trash.svg');
+  }
+  .tooltip {
+    visibility: hidden;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 500ms;
+    width: 120px;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    .text {
+      background-color: black;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      display: inline-block;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+      }
+    }
+  }
+
+  .gjs-resizer-h {
+    border: 3px solid $color_primary;
+  }
+
+
+  // tab
+  #blockTab{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    font-size: 0;
+  }
+  #blockTab span{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: block;
+    margin: 4px 0 0;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #0ae;
+    -webkit-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+    font-size: 14px;
+  }
+  #blockTab input[type="radio"]{
+    display: none;
+  }
+  #blockTab input[type="radio"] + em{
+    position: relative;
+    z-index: 100;
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 4px 0 0;
+    min-width: 80px;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    background: #ddd;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  #blockTab input[type="radio"]:checked + em{
+    background: #0ae;
+    color: #fff;
+  }
+  #blockTab input[type="radio"]:checked + em::after {
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin-left: -9px;
+    border: 9px solid transparent;
+    border-top: 9px solid #0ae;
+    content: "";
+  }
+  #blockTab input[type="radio"] + em ~ span{
+    display: none;
+  }
+  #blockTab input[type="radio"]:checked + em ~ span{
+    display: block;
+  }
+}
+

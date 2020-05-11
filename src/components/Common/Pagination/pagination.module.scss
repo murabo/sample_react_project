@@ -1,0 +1,29 @@
+:global {
+  .pagination {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    li {
+      font-size: 14px;
+      color: #2EB964;
+      a {
+        width: 28px;
+        height: 28px;
+        line-height: 26px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+    .active {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      line-height: 24px;
+    }
+    .disabled {
+      color: #ccc;
+    }
+  }
+
+}

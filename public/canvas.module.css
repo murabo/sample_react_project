@@ -1,0 +1,105 @@
+html {
+  max-width: 790px;
+  margin: auto;
+  font-size: 14px;
+}
+
+h1.gjs-comp-selected,
+p.gjs-comp-selected,
+span.gjs-comp-selected,
+strong.gjs-comp-selected,
+div.gjs-comp-selected,
+img.gjs-comp-selected,
+del.gjs-comp-selected,
+ins.gjs-comp-selected,
+table.gjs-comp-selected,
+td.gjs-comp-selected,
+tr.gjs-comp-selected,
+a.gjs-comp-selected{
+  outline: 2px solid rgba(46, 185, 100, 0.4) !important;
+  position: relative;
+  outline-offset: -2px;
+}
+h1.gjs-hovered,
+p.gjs-hovered,
+span.gjs-hovered,
+strong.gjs-hovered,
+div.gjs-hovered,
+img.gjs-hovered,
+del.gjs-hovered,
+ins.gjs-hovered,
+table.gjs-hovered,
+td.gjs-hovered,
+tr.gjs-hovered,
+a.gjs-hovered {
+  outline: 1px solid rgba(46, 185, 100, 0.4) !important;
+  outline-offset: -1px;
+}
+
+.gjs-dashed div[data-mytext] {
+  outline: 2px dashed #6d7470 !important;
+  outline-offset: -2px;
+}
+
+.cke_chrome {
+  border: none !important;
+}
+.cke_toolgroup {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#wrapper {
+  outline: none !important;
+  padding-bottom: 200px;
+}
+
+* {
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* pdf モードの場合*/
+.pdf {
+  padding: 10mm;
+}
+
+
+.comment-highlight {
+  background: #F7EEA5;
+  border: 5px solid #F7EEA5 !important;
+}
+.js-ai-variants {
+  background: #CBF6FE;
+  color: #6BA1D3;
+}
+.js-ai-zenkaku {
+  background: #E89EB8;
+  color: #ff52c1;
+}
+.js-ai-desumasu {
+  background: #FBEED7;
+  color: #E7A82E;
+}
+/* diff*/
+del {
+  background: #ddd;
+  text-decoration: line-through;
+}
+ins {
+  background: rgba(69, 230, 252, 0.5);
+  text-decoration: none;
+}
+
+
+/*comment*/
+.gjs-icon-commnet {
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-image: url('../../../../../../../assets/editor/rte_comment.svg');*/
+}
+
+

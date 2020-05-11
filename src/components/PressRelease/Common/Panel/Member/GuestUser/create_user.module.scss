@@ -1,0 +1,24 @@
+.list {
+  margin-top: 10px;
+  border: 1px solid #EBF0ED;
+  font-size: 12px;
+  border-radius: 4px;
+  background: #fff;
+  li:not(:last-child) {
+    border-bottom: 1px solid #EBF0ED;
+  }
+
+
+}
+.user {
+  margin-bottom: 10px;
+  background: #fff;
+}
+.creator {
+  color: #616763;
+  font-size: 12px;
+}
+.add {
+  text-align: right;
+  margin-top: 10px;
+}

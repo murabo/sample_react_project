@@ -1,0 +1,30 @@
+:global {
+  .ReactTags__tags {
+    margin-top: 20px;
+  }
+  .ReactTags__tagInputField {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #E2E9E5;
+    outline: none
+  }
+  .ReactTags__tag {
+    opacity: 1;
+    cursor: move;
+    font-size: 13px;
+    color: #6D7470;
+    display: flex;
+    margin: 10px 0;
+    a {
+      margin-left: auto;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+    }
+  }
+  .ReactTags__suggestions {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+}

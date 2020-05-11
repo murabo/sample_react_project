@@ -1,0 +1,22 @@
+.title {
+  margin-top: 30px;
+  padding: 0 10px 10px;
+  width: 520px;
+  font-weight: bold;
+  color: #6D7470;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.label {
+  color: #6d7470;
+  font-size: 12px;
+  width: 130px;
+}
+
+.form {
+  li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+}

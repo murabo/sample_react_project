@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.title {
+  margin-top: 2rem;
+  padding: 0 1rem 1rem;
+  width: 52rem;
+  font-weight: bold;
+  color: #6D7470;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.subTitle {
+  width: 100px;
+  color: #6d7470;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.message {
+  flex: 1;
+}

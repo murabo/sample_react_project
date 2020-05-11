@@ -1,0 +1,30 @@
+.root {
+  padding: 10px;
+  width: 304px;
+  background: #F3F7F4;
+}
+.title {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.nodata {
+  margin: 10px;
+}
+.list {
+  margin-top: 10px;
+  li {
+    font-size: 14px;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    .label {
+      font-size: 11px;
+      margin-bottom: 5px;
+      color: #bbb;
+    }
+  }
+}
+

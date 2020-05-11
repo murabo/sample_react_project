@@ -1,0 +1,21 @@
+.list {
+  margin-top: 20px;
+  li {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+.form {
+  width: 500px;
+  text-align: center;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  .input {
+    flex: 1;
+  }
+  .button {
+    margin-left: 10px;
+  }
+}

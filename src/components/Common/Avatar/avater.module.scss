@@ -1,0 +1,14 @@
+.avatar {
+  position: relative;
+  display: inline-block;
+}
+.active {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #2EB964;
+  border-radius: 50%;
+}

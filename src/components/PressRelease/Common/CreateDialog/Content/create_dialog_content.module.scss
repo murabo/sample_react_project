@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  width: 100%;
+  background: #e2e9e5;
+  .menu {
+    width: 29rem;
+    border-right: 0.1rem solid #E2E9E5;
+    overflow: scroll;
+    position: absolute;
+    background: #fff;
+    max-height: 100%;
+    padding-bottom: 100px;
+    height: 100%;
+  }
+  .content {
+    flex: 1;
+    margin: 2rem;
+    padding-left: 300px;
+    overflow: hidden;
+    .inner {
+      background: #fff;
+      overflow: scroll;
+      height: 100%;
+      iframe {
+        transform: scale(0.73, 0.73);
+        width: 800px !important;
+        height: 100%;
+        transform-origin: top left;
+      }
+    }
+  }
+}
+

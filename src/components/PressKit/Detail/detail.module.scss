@@ -1,0 +1,46 @@
+.wrap {
+  width: 100%;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom:  1px solid #E2E9E5;
+  background: #fff;
+  .title {
+    color: #6D7470;
+    font-size: 14px;
+  }
+  .name {
+    margin-top: 5px;
+    color: #6d7470;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+  }
+  .actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    button {
+      margin-right: 1rem;
+    }
+  }
+}
+.body {
+  display: flex;
+  height: 100%;
+  overflow: scroll;
+  .preview {
+    margin: auto;
+    flex: 1;
+    height: calc( 100vh - 68px );
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+

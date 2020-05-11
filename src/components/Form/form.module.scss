@@ -1,0 +1,173 @@
+.root {
+  position: relative;
+  margin-bottom: 30px;
+  button {
+    width: 100%;
+    max-width: 400px;
+  }
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    > li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid #E2E9E5;
+      padding: 8px 0;
+    }
+  }
+  .caption {
+    font-size: 12px;
+  }
+  .panelItem {
+    margin: 20px 0;
+    > li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 8px 0;
+    }
+  }
+
+  label {
+    color: #616763;
+    font-size: 12px;
+    width: 125px;
+  }
+
+  .form {
+    display: flex;
+    flex: 1;
+
+    > li {
+      padding-right: 10px;
+      width: 50%;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .column {
+    display: flex;
+    > li {
+      padding: 0 10px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .comment {
+    background: #fff;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    .head {
+      display: flex;
+    }
+  }
+
+  .reply {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    .actions {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+
+
+  .img {
+    cursor: pointer;
+    position: relative;
+    height: 80px;
+    width: 80px;
+     img {
+       width: 100%;
+       max-width: 80px;
+       max-height: 80px;
+     }
+    .camera {
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+    }
+    .noImg {
+      background: #eee;
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  .logo {
+    cursor: pointer;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    img {
+      width: 100%;
+      max-width: 200px;
+      max-height: 200px;
+    }
+    .camera {
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+    }
+    .noImg {
+      background: #eee;
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+}
+.error {
+  color: red;
+  margin: 15px 0 0;
+  font-size: 13px;
+}
+
+.iconPlus {
+  margin-right: 1rem;
+}
+
+.quote {
+  font-size: 12px;
+  margin-left: 10px;
+  border-left: 2px solid #ddd;
+  padding-left: 5px;
+}
+.profile {
+  //padding: 30px 15px;
+  //text-align: center;
+  //margin-bottom: 5px;
+  //border-bottom: 1px solid #E2E9E5;
+  .photo {
+    position: relative;
+    //.camera {
+    //  position: absolute;
+    //  bottom: 0;
+    //  left: 50%;
+    //  background: rgba(255, 255, 255, 0.8);
+    //  width: 80px;
+    //  height: 25px;
+    //  margin-left: -40px;
+    //  padding-top: 5px;
+    //}
+  }
+}

@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px 4px 0 0;
+  align-items: center;
+  .name {
+    padding-left: 10px;
+    color: #6D7470;
+  }
+  .action {
+    margin-left: auto;
+  }
+}

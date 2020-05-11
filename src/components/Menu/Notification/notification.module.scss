@@ -1,0 +1,27 @@
+.header{
+  height: 80px;
+  width: 534px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  .title {
+    color: #616763;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .iconBack {
+    img {
+      width: 10px;
+      height: 19px;
+    }
+  }
+  .iconMenu {
+    margin-left: auto;
+  }
+}
+
+.list {
+  height: 100vh;
+  overflow: scroll;
+}

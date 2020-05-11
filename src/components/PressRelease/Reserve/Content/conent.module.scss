@@ -1,0 +1,46 @@
+.email {
+  display: block;
+}
+.root {
+  height: 100vh;
+  max-width: 800px;
+  margin: auto;
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+.content {
+  display: flex;
+  .title {
+    background: #616763;
+    color: #fff;
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .side {
+    min-width: 240px;
+    background: #fff;
+    border: 1px solid #bbb
+  }
+  .main {
+    flex: 1;
+    margin-left: 10px;
+  }
+}
+
+.datetime {
+  padding: 10px 0;
+  margin-right: 20px;
+}
+.noSend {
+  padding: 10px;
+  text-align: center;
+}
+.allopen {
+  margin-left: auto;
+}
+

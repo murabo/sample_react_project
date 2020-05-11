@@ -1,0 +1,17 @@
+.root {
+  max-width: 1000px;
+}
+.filter {
+  margin-top: 1rem;
+  display: flex;
+  .switchLayout {
+    margin-left: auto;
+  }
+}
+.list {
+  margin-top: 10px;
+  min-height: 300px;
+}
+.pagination {
+  margin-top: 20px;
+}

@@ -1,0 +1,17 @@
+export const selectReset = state => state.reset;
+export const selectMedia = state => state.media;
+export const selectPressRelease = state => state.pressRelease;
+export const selectPressReleaseList = state => state.pressReleaseList;
+export const selectPressReleaseReserve = state => state.pressReleaseReserve;
+export const selectPressReleasePublish = state => state.pressReleasePublish;
+export const selectPressKit = state => state.pressKit;
+export const selectPressShare = state => state.pressShare;
+export const selectReserve = state => state.reserve;
+export const selectMe = state => state.me;
+export const selectCompany = state => state.company;
+export const selectMember = state => state.member;
+export const selectGroup = state => state.group;
+export const selectBlock = state => state.block;
+export const selectAsset = state => state.asset;
+export const selectMovie = state => state.movie;
+export const selectRouter = state => state.router;

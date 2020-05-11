@@ -1,0 +1,251 @@
+{
+  "sectors": [
+    {
+      "id": "img",
+      "name": "画像",
+      "open": true,
+      "buildProps": [
+        "width"
+      ],
+      "properties": [
+        {
+          "name": "大きさ",
+          "property": "width",
+          "type": "slider",
+          "unit": "%",
+          "defaults": "100",
+          "min": 0
+        }
+      ]
+    },
+    {
+      "id": "hr",
+      "name": "仕切り線",
+      "open": true,
+      "buildProps": [
+        "border-bottom"
+      ],
+      "properties": [
+        {
+          "name": "線",
+          "property": "border-bottom",
+          "type": "composite",
+          "properties": [{
+            "name": "太さ",
+            "unit": "px",
+            "defaults": 0,
+            "min": 1,
+            "type": "slider"
+          },{
+            "id": "border-style",
+            "name": "スタイル",
+            "defaults": "solid"
+          }, {
+            "name": "色",
+            "type": "color",
+            "defaults": "#333"
+          }]
+        }
+      ]
+    },
+    {
+      "id": "text",
+      "name": "画像",
+      "open": true,
+      "buildProps": [
+        "text-align",
+        "background-color",
+        "border-radius",
+        "padding",
+        "border"
+      ],
+      "properties": [
+        {
+          "name": "位置",
+          "property": "text-align",
+          "type": "radio",
+          "list": [{
+            "value": "left"
+          },
+            {
+              "value": "center"
+            },
+            {
+              "value": "right"
+            }]
+        },
+        {
+          "id": "background-color",
+          "name": "背景色",
+          "default": "#333"
+        },
+        {
+          "id": "border-radius",
+          "name": "角丸",
+          "unit": "px",
+          "defaults": 0,
+          "min": 0,
+          "type": "slider"
+        },
+        {
+          "id": "padding",
+          "name": "余白",
+          "type": "composite",
+          "properties": {
+            "id": "padding",
+            "name": "余白",
+            "property": "padding",
+            "type": "slider",
+            "defaults": 10,
+            "min": 0,
+            "unit": "px"
+          }
+        },
+        {
+          "id": "border",
+          "name": "線",
+          "properties": [
+            {
+              "id": "border-width",
+              "name": "太さ",
+              "unit": "px",
+              "defaults": 0,
+              "min": 0,
+              "type": "slider"
+            },
+            {
+              "id": "border-style",
+              "name": "スタイル",
+              "defaults": "solid"
+            },
+            {
+              "id": "border-color",
+              "name": "色",
+              "defaults": "#333"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "all",
+      "name": "レイアウト",
+      "open": true,
+      "buildProps": [
+        "text-align",
+        "align-items",
+        "padding",
+        "background-color",
+        "border-radius",
+        "border"
+      ],
+      "properties": [
+        {
+          "name": "位置",
+          "property": "text-align",
+          "type": "radio",
+          "list": [{
+            "value": "left"
+          },
+            {
+              "value": "center"
+            },
+            {
+              "value": "right"
+            }]
+        },
+        {
+          "id": "padding",
+          "name": "余白",
+          "type": "composite",
+          "properties": [{
+            "id": "padding-top",
+            "name": "上",
+            "property": "padding-top",
+            "type": "slider",
+            "defaults": 10,
+            "min": 0,
+            "unit": "px"
+          },{
+            "id": "padding-bottom",
+            "name": "下",
+            "property": "padding-bottom",
+            "type": "slider",
+            "defaults": 10,
+            "min": 0,
+            "unit": "px"
+          },
+          {
+            "id": "padding-right",
+            "name": "右",
+            "property": "padding-right",
+            "type": "slider",
+            "defaults": 10,
+            "min": 0,
+            "unit": "px"
+          },{
+            "id": "padding-left",
+            "name": "左",
+            "property": "padding-left",
+            "type": "slider",
+              "defaults": 10,
+              "min": 0,
+              "unit": "px"
+            }
+          ]
+        },
+        {
+          "id": "background-color",
+          "name": "背景色",
+          "default": "#333"
+        },
+        {
+          "id": "border-radius",
+          "name": "角丸",
+          "unit": "px",
+          "defaults": 0,
+          "min": 0,
+          "type": "slider"
+        },
+        {
+          "id": "border",
+          "name": "線",
+          "properties": [
+            {
+              "id": "border-width",
+              "name": "太さ",
+              "unit": "px",
+              "defaults": 0,
+              "min": 0,
+              "type": "slider"
+            },
+            {
+              "id": "border-style",
+              "name": "スタイル",
+              "defaults": "solid"
+            },
+            {
+              "id": "border-color",
+              "name": "色",
+              "defaults": "#333"
+            }
+          ]
+        },
+        {
+          "name": "垂直方向",
+          "property": "align-items",
+          "type": "radio",
+          "list": [{
+            "value": "flex-start"
+          },
+            {
+              "value": "center"
+            },
+            {
+              "value": "flex-end"
+            }]
+        }
+      ]
+    }
+  ]
+}

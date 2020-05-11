@@ -1,0 +1,30 @@
+.wrap {
+  width: 100%;
+  min-width: 780px;
+}
+.body {
+  display: flex;
+  overflow: scroll;
+  .preview {
+    margin: auto;
+    flex: 1;
+    height: calc( 100vh - 68px );
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+  }
+  .check {
+    margin: auto;
+    overflow: scroll;
+    height: 100vh;
+    flex: 1;
+  }
+}
+.nav {
+  background: #F0F6FB;
+  color: #6BA1D3;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+}

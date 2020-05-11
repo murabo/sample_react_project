@@ -1,0 +1,26 @@
+.list {
+  li {
+    border-bottom: 0.1rem solid #EBF1ED;
+    padding: 1rem;
+    .body {
+      display: flex;
+    }
+    .bodyContent {
+      color: #555;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      .datetime {
+        font-size: 1rem;
+        display: inline-block;
+        margin-left: 0.5rem;
+        color: #6d7470;
+      }
+      .info {
+        margin-bottom: 1rem;
+      }
+    }
+    .actions {
+      margin-left: auto;
+    }
+  }
+}

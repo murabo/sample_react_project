@@ -1,0 +1,55 @@
+.iconPlus {
+  margin-right: 0.5rem;
+}
+
+
+
+.chipsList {
+  display: block;
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  .chip {
+    display: inline-block;
+    background: #fff;
+    padding: 0.1rem 1.2rem;
+    border-radius: 6.2rem;
+    .inner {
+      display: flex;
+      align-items: center;
+    }
+    .info {
+      margin-left: 1rem;
+      white-space: nowrap;
+      .name {
+        color: #6D7470;
+        font-size: 1.4rem;
+      }
+      .company {
+        color: #6d7470;
+        font-size: 1rem;
+      }
+    }
+    .chipAction {
+      margin-left: 2rem;
+      .iconButton {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+  }
+}
+
+.check {
+  white-space: nowrap;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  color: #2EB964;
+  font-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url('../../../../assets/check.svg');
+}

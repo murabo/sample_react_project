@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #E2E9E5;
+  padding: 18px;
+  label {
+    color: #6d7470;
+    font-size: 12px;
+    width: 120px;
+  }
+  .text {
+    font-size: 14px;
+    display: flex;
+    p {
+      margin-right: 10px;
+    }
+  }
+}

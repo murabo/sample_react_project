@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #E2E9E5;
+  padding: 15px;
+  label {
+    color: #6d7470;
+    font-size: 12px;
+    width: 120px;
+  }
+  .text {
+    font-size: 14px;
+    display: flex;
+    p {
+      margin-right: 10px;
+    }
+  }
+  .sample {
+    display: block;
+    margin-left: 20px;
+  }
+  .logo {
+    min-height: 100px;
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+.action {
+  display: flex;
+  justify-content: flex-end;
+}

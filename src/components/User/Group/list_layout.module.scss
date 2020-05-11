@@ -1,0 +1,29 @@
+.list{
+  width: 100%;
+  border-bottom: 0.1rem solid #E2E9E5
+}
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 0;
+  .title {
+    flex: 1;
+    width: 20rem;
+    font-size: 1.4rem;
+    padding-right: 2rem;
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .menu {
+    width: 3rem;
+    .iconMenu {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

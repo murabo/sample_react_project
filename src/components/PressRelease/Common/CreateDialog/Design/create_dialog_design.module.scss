@@ -1,0 +1,26 @@
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+
+  li {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+
+    .active {
+      background: #E3F5EA;
+
+      .img {
+        border: 0.2rem solid #2EB964
+      }
+    }
+
+  }
+
+}
+

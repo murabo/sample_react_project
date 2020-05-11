@@ -1,0 +1,30 @@
+.list{
+  width: 100%;
+  border-bottom: 0.1rem solid #E2E9E5
+}
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 0;
+  font-size: 14px;
+  color: #6D7470;
+  li {
+    min-width: 130px;
+  }
+  .menu {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+.header {
+  font-size: 11px;
+  color: #6D7470;
+  display: flex;
+  li {
+    min-width: 130px;
+  }
+  padding: 10px 0 5px;
+  border-bottom: 1px solid #E2E9E5;
+}
